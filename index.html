@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Parallax JS</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/index.css"/>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/parallax.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <ul id="scene">
+        <li class="layer" data-depth="1"><img src="./assets/img/planet1.png" alt=""/></li>
+        <li class="layer" data-depth="-1"><img src="./assets/img/planet2.png" alt=""/></li>
+        <li class="layer" data-depth="2"><img src="./assets/img/astronaut.png" alt=""/></li>
+        <li class="layer" data-depth=".5"><img src="./assets/img/rocket.png" alt=""/></li>
+        <li class="layer" data-depth=".1">
+          <div class="d-flex align-items-center justify-content-center" style="height: 500px;">
+            <div id="parallax">
+                <div id="name" class="mb-2 h1">Трегубов Вячеслав</div>
+                <div id="stack" class="mb-2 h2">Студент двфу</div>
+                <div id="conatcts" class="mb-2 h2">88004443322 | slavaXTO@ya.vi</div>
+                <ul id="social" class="nav justify-content-center  ">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://m.vk.com/" aria-current="page">
+                          vk
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://web.telegram.org/">
+                          Telegram
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="https://boosty.to/">
+                          Boosty
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </li>
+      </ul>
+    </div>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

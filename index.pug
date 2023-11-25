@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Parallax JS
+    link(rel="stylesheet", href="assets/css/index.css")
+    script(src="assets/js/parallax.js")
+  body
+      .container
+        ul#scene
+          each val in ['./assets/img/text.png', './assets/img/planet1.png', './assets/img/planet2.png', './assets/img/astronaut.png', './assets/img/rocket.png']
+              li.layer(data-depth="0")
+                img(src=val, alt="")
+
+
+
+      script(src="assets/js/index.js")
